@@ -72,29 +72,12 @@ background: none;
 transform: translateY(6px)
 }
 
+
 /* TERMINA MENU HAMBURGUESA */
 
 
-.navheader {
-  /* color: ; */
-  background-color: black;
-  box-shadow: 0 5px 10 px; color: grey;
-  /* FLEX */
-  list-style: none;
-  margin: 0, auto;
-  padding: 0, auto;
-
-}
-
 .navheader a {
   color: bisque;
-  text-decoration: none; 
-  margin: 0em 2em;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: larger;
-  display: flex;
-  justify-content:space-between;
-  flex-direction: column;
 }
 .navheader a:hover {
   color: red;
@@ -213,7 +196,7 @@ transform: translateY(6px)
       color: bisque; }
     
 
-@media (min-width: 576px) and (max-width: 992px)
+@media (min-width: 576px) and (max-width: 991px)
 { 
   
   body {
@@ -227,6 +210,12 @@ transform: translateY(6px)
     background-position: center;
     background-repeat: no-repeat;
   }
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
   .btn-burger{
     display: none !important;
   }
@@ -238,15 +227,6 @@ transform: translateY(6px)
   .textocostado {
   display: flex; 
   justify-content:center ;
-  }
-  
-  .navheader {
-      height: 2em;
-      /* color: ; */
-      background-color: black;
-      /* FLEX */
-      display: flex;
-      justify-content: center;
   }
   
 
@@ -349,6 +329,12 @@ body {
     justify-content: center;
 }
 
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
 .btn-burger{
   display: none !important;
 }
@@ -356,22 +342,7 @@ body {
   width: 100%;
 }
 
-.navheader {
-    height: 2em;
-    /* color: ; */
-    background-color: black;
-    /* FLEX */
-    display: flex;
-    justify-content: center;
-}
 
-.navheader a {
-    color: bisque;
-    text-decoration: none; 
-    margin: 0em 2em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
-}
 
 .navheader a:hover {
     color: red;
@@ -466,83 +437,172 @@ right: 20%;
  ================================================================================================================================================*/
 
 
- h1{
+ .nuestra_discografia{
   display: flex;
   flex-direction: row;
   justify-content:center ;
   font-size: 45px;
-  color: purple;
-  font-weight: 545;
- }
+  color: bisque;
+  font-weight: 575;
+ } 
 
 .p_class{
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-size: 29px;
     color: black;
     font-weight: 460;
+    margin-left: 1%;
+    padding-left: 5%;
+    padding-right: 5;
   }
 
-  h2{
+   .viejos_clasicos{
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-size: 40px;
-    color: purple;
-    font-weight: 545;}
-
- .night_visionsdiv {
+    color: beige;
+    font-weight: 300;} 
+    
+ .album1{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  margin: 5%;
+  padding-top: 5%;
  }
 
- .night_visionsdiv p{
+ .album1 p{
   font-size: larger;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   font-weight:800;
+  margin: 5%;
+  padding-top: 5%;  
+ }
+.album2{
+   display: flex;
+  flex-direction: row-reverse;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ .album2 p{
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  color: beige;
+  font-weight:800;
+  margin: 5%;
+  padding-top: 5%;
+ }
+ .album3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+  padding-top: 5%;
  }
 
+ .album3 p{
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight:800;
+   margin: 5%;
+  padding-top: 5%;
+ }
 
+ /* ESCUCHA NUESTRO NUEVO REPERTORIO */
 
- .smoke_mirrorsdiv p{
+ .nuevo_repertorio{
+  display: flex;
+  justify-content: center;
+ }
+
+.album4{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+
+}
+
+ .album4 p{
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight:800;
+  margin: 5%;
+  padding-top: 5%;
+ }
+ .album5 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: space-between;
+  align-items: center;
+  margin: 5%;
+  padding-top: 5%;
+ }
+
+ .album5 p{
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  color: beige;
+  font-weight:800;
+  margin: 5%;
+  padding-top: 5%;
+ }
+
+/* ===============================================================================================
+     Media queries para Discografía                                 
+ =================================================================================================*/
+@media (min-width: 576px) and (max-width: 991px) {
+
+ .album1{
+  display: flex;
+  flex-direction: row;
+ }
+ .album2{
+  display: flex;
+  flex-direction: row;
+ }
+
+ .album3{
+  display: flex;
+  flex-direction: row;
+ }
   
-  font-size: larger;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-weight:800;
- }
- .evolvediv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
 
- .evolvediv p{
-  font-size: larger;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-weight:800;
- }
+}
 
- .originsdiv p{
-  font-size: larger;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-weight:800;
- }
- .mercuryact1div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
+@media (min-width: 992px) {
+  .flex_superior{
+    display: flex;
+  }
+  .album1{
+    display: flex;
+    flex-direction: row;
+   }
+   .album2{
+    display: flex;
+    flex-direction: row;
+   }
+  
+   .album3{
+    display: flex;
+    flex-direction: row;
+   }
+   .album4{
+    display: flex;
+    flex-direction: row-reverse;
+   }
 
- .mercuryact1div p{
-  font-size: larger;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-weight:800;
- }
 
+
+}
