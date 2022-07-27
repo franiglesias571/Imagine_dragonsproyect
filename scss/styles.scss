@@ -1,0 +1,612 @@
+@import "variable";
+body {
+    max-width: 100%;
+    font-family: Helvetica;
+  /* Parallax del Wallpaper*/
+   background-image: url(../img/Wallpaper_imagine_dragons.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+  
+   /**USAR CUANDO HAGAS MEDIA QUERIE PARA TAMAÑO DE PANTALLA COMPLETA
+    
+     **/
+  }
+  
+  /** FORMATO DE CSS HECHO CON MOBILE FIRST PARA APLICAR MEDIA QUERIES**/ 
+  
+  /** HEADER**/
+  
+  /** Logo de imagine Dragons**/
+  .imgdr {
+    display: flex;
+    justify-content: center;
+    border-radius: 2%;
+    overflow: hidden;
+  }
+  
+  /**Div general del body**/
+  .contenedorgeneral{ 
+      width: 100%;
+  margin: 0 auto;
+  }
+  /* MENU HAMBURGUESA */
+  .btn-burger{
+    display: flex;
+  float: right;
+    width: 55px;
+    height: 55px;
+  background: none;
+    border-radius: 5px;
+    transition: all 0.7s ease-in-out;
+  }
+  
+  
+  .btn-burger-icon{
+    display: block;
+    margin: auto;
+    width: 30px;
+    height: 4px;
+    background-color: $color-primario;
+    border-radius: 2px;
+    transition: all 0.7s ease-in-out;
+    /* anidadas ambas clases :: before y :: after */ 
+    &::before {  content: '';
+        display: block;
+        margin: auto;
+        width: 30px;
+        height: 4px;
+        background-color: $color-primario;
+        border-radius: 2px;
+        transition: all 0.7s ease-in-out;
+        transform: translateY(-10px)  }
+      &::after {
+        content: '';
+        display: block;
+        margin: auto;
+        width: 30px;
+        height: 4px;
+        background-color: $color-primario;
+        border-radius: 2px;
+        transition: all 0.7s ease-in-out;
+        transform: translateY(6px)  }
+    }
+    
+  /* TERMINA MENU HAMBURGUESA */
+  .navheader{
+    a{
+        color: $color-secundario;
+    }
+    & a:hover{
+        color: red;
+        text-decoration: underline;
+    }
+
+  }  
+  .header_escritorio{
+    display: none !important;
+  }
+  
+  .giffrontal { 
+    width: 98%y;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5%;
+    padding-left: 0, auto;
+    height: 40vh;
+    }
+  
+  .textocostado {
+    display: flex;
+    flex-direction: column;
+    
+    }
+  
+    .maindiv {
+      color: $color-primario;
+      width: 93%;
+      line-height: 2em;
+      font-size: 15px;
+  
+   
+    }
+  /** Section **/
+     section {
+      margin: 20px 10px;
+      padding-left: 20px;
+      h3{  /** "Escucha nuestro nuevo album! **/
+        position: relative;
+        font-size: 22px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: cornsilk;
+
+      }
+    }
+  
+  
+    /** IMAGEN MERCURY ACT 1**/
+    .a_album1 {
+      width: 55vw;
+      
+    }
+    /** VIDEO PUESTO**/
+    iframe {
+      position: relative;
+      margin-top: 4%;
+      min-height: 27vw;
+      
+      
+      
+    }
+  /* ASIDE TEXTO PREVIO FOOTER */
+  
+    aside{
+      height: 89px;
+     margin-bottom: 4%;
+      text-align: center;
+      color: aliceblue;
+      p{       font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        color: bisque;
+          /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/ }
+    }
+
+      .footerclass{
+  
+        /* GRID */
+        display: grid;
+        
+      grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        /* "g1 . ." */
+        "g1 g3 g2";
+        align-items: center;
+      }
+      .logofooter{
+        grid-area: g1;
+        width: 50vw;
+      }
+      .redes_sociales{
+        grid-area: g2;
+        display: flex;
+        justify-content: end;
+      }
+      .footer_letras{
+        grid-area: g3;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding: 0px 10%;
+        padding-top: 10%;
+        padding-left: 5%;
+        color: $color-secundario;
+        font-size: small;
+        p   {
+            padding: 0px 3%; 
+            position: relative;
+            color: $color-secundario;}
+      }
+      
+      .footerclass{ background-image: linear-gradient(to left ) rgba(135, 137, 139, 0.499);
+           
+      }
+      
+  
+  @media (min-width: 576px) and (max-width: 991px)
+  { 
+    
+    body {
+      max-width: 100%;
+      padding: 0px;
+      margin: 0px;
+      font-family: Helvetica;
+      background-image: url(../img/Wallpaper_imagine_dragons.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .navbar-nav.navbar-center {
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+    }
+  
+    .btn-burger{
+      display: none !important;
+    }
+    .giffrontal { 
+      width: 75%;
+    
+    }
+    
+    .textocostado {
+    display: flex; 
+    justify-content:center ;
+    }
+    
+  
+    .textocostado {
+      display: grid; 
+      grid-template-rows: 2fr 1fr;
+      }
+      .maindiv {
+        width: 100%;
+        padding: 0;
+        margin-top: .2px;
+        font-size: 0.8em;
+        text-align: center;
+      }
+      .giffrontal{
+        width: 100%;
+      }
+  
+  
+    .secdiv2 {
+      padding-right: 0px;
+      }
+  
+      .div_sectionprincipal {
+  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5rem;
+        
+      }
+    
+      section h3 {
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: cornsilk;
+      }
+    
+      .a_album1 {
+        width: 45vw;
+        display: flex;
+        align-self:center
+        
+      }
+    
+      .a_album2 {
+        height: 31.5vh;
+        bottom: 3%;
+      }
+    
+    
+      aside{
+        height: 70px;
+        padding: 20px 10px 10px 10px;
+        text-align: center;
+        color: aliceblue;
+        p {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+              /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/
+            }
+      }
+      
+    .footer_letras{
+      font-size: larger;
+      justify-self: baseline;
+      row-gap: 2rem;
+    }
+  
+   } 
+  
+  
+   
+   
+   
+   /* MEDIA QUERY DEL ESCRITORIO */
+  
+  
+  
+   @media (min-width: 993px) {
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+  }
+  
+  body {
+      max-width: 100%;
+      padding: 0px;
+      margin: 0px;
+      font-family: Helvetica;
+      background-image: url(../img/Wallpaper_imagine_dragons.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  
+  .imgdr {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  
+  .btn-burger{
+    display: none !important;
+  }
+  .giffrontal { 
+    width: 100%;
+  }
+  
+  
+  
+  .navheader a:hover {
+      color: red;
+      text-decoration: underline;
+  }
+  
+  
+    .maindiv {
+      padding: 2px 15px;
+      margin-top: -5px;
+      
+    }
+  
+  .maindiv h2 {
+    color: aliceblue;
+    font-size: 1.1em;
+  }
+  .secdiv2 {
+  right: 20%; 
+    }
+  
+    .div_sectionprincipal {
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 20rem;
+      
+    }
+  
+    section h3 {
+      font-size: 35px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: cornsilk;
+    }
+  
+    .a_album1 {
+      width: 25vw;
+      display: flex;
+      align-self:center
+      
+    }
+  .a_album2 {
+    width: 30vw;
+    left: 3rem;
+  
+  }
+  
+    }
+  
+    aside{
+      height: 70px;
+      text-align: center;
+      color: aliceblue;
+    }
+    aside p {
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+        /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/
+      }
+  
+      .footerclass{ background-color: rgba(135, 137, 139, 0.499);
+        position: relative;
+         
+        
+      }
+      
+      .redes_sociales {
+          display: flex;
+          justify-content: flex-end;
+          left: 14px;
+      }
+      .footer_letras {
+        display: flex;
+        top: 70%;
+        flex-direction: row;
+        p {
+            font-size: larger;
+            color: bisque;
+          }
+    
+      }
+      
+      .logofooter{ width: 17.5%;
+        top: 50px;
+        
+      } 
+  
+    
+   /*===============================================================================================================================================  
+                                                              TERMINA INDEX COMIENZA DISCOGRAFIA
+   ================================================================================================================================================*/
+  
+  
+   .nuestra_discografia{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    font-size: 45px;
+    color: $color-secundario;
+    font-weight: 575;
+   } 
+  
+  .p_class{
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 29px;
+      color: black;
+      font-weight: 460;
+      margin-left: 1%;
+      padding-left: 5%;
+      padding-right: 5;
+    }
+  
+     .viejos_clasicos{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 40px;
+      color: $color-primario;
+      font-weight: 300;} 
+      
+   .album1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 5%;
+    padding-top: 5%;
+    p{
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-weight:800;
+        margin: 5%;
+        padding-top: 5%;  
+       }
+   }
+  
+
+  .album2{
+     display: flex;
+    flex-direction: row-reverse;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+        color: beige;
+        font-weight:800;
+        margin: 5%;
+        padding-top: 5%;
+       }
+  }
+  
+  
+   
+   .album3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    padding-top: 5%;
+    p{
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-weight:800;
+         margin: 5%;
+        padding-top: 5%;
+       }
+   }
+  
+  
+   /* ESCUCHA NUESTRO NUEVO REPERTORIO */
+  
+   .nuevo_repertorio{
+    display: flex;
+    justify-content: center;
+   }
+  
+  .album4{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-weight:800;
+        margin: 5%;
+        padding-top: 5%;
+       }
+  
+  }
+  
+   
+   .album5 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: space-between;
+    align-items: center;
+    margin: 5%;
+    padding-top: 5%;
+    p{
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+        color: $color-primario;
+        font-weight:800;
+        margin: 5%;
+        padding-top: 5%;
+       }
+   }
+  
+  
+  /* ===============================================================================================
+       Media queries para Discografía                                 
+   =================================================================================================*/
+  @media (min-width: 576px) and (max-width: 991px) {
+  
+   .album1{
+    display: flex;
+    flex-direction: row;
+   }
+   .album2{
+    display: flex;
+    flex-direction: row;
+   }
+  
+   .album3{
+    display: flex;
+    flex-direction: row;
+   }
+    
+  
+  }
+  
+  @media (min-width: 992px) {
+    .flex_superior{
+      display: flex;
+    }
+    .album1{
+      display: flex;
+      flex-direction: row;
+     }
+     .album2{
+      display: flex;
+      flex-direction: row;
+     }
+    
+     .album3{
+      display: flex;
+      flex-direction: row;
+     }
+     .album4{
+      display: flex;
+      flex-direction: row-reverse;
+     }
+  
+  
+  
+  }
+  
