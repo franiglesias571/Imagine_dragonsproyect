@@ -1,0 +1,40 @@
+.footerclass{
+  
+    /* GRID */
+    display: grid;
+    
+  grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    /* "g1 . ." */
+    "g1 g3 g2";
+    align-items: center;
+  }
+  .logofooter{
+    grid-area: g1;
+    width: 50vw;
+  }
+  .redes_sociales{
+    grid-area: g2;
+    display: flex;
+    justify-content: end;
+  }
+  .footer_letras{
+    grid-area: g3;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 0px 10%;
+    padding-top: 10%;
+    padding-left: 5%;
+    color: $color-secundario;
+    font-size: small;
+    p   {
+        padding: 0px 3%; 
+        position: relative;
+        color: $color-secundario;}
+  }
+  
+  .footerclass{ background-image: linear-gradient(to left ) rgba(135, 137, 139, 0.499);
+     }
+
+     

@@ -1,0 +1,26 @@
+@import "utilities/variable";
+
+.giffrontal { 
+    width: 98%y;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5%;
+    padding-left: 0, auto;
+    height: 40vh;
+    }
+  
+  .textocostado {
+    display: flex;
+    flex-direction: column;
+    
+    }
+  
+.maindiv {
+width: 93%;
+line-height: 2em;
+font-size: 15px;
+& h2{
+color: beige;
+}
+
+}

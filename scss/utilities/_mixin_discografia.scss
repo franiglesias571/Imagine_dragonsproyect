@@ -1,0 +1,12 @@
+
+// mixin para album section123 
+
+@mixin p_formato {
+    font-size: larger;
+      font-family: Arial, Helvetica, sans-serif;
+      color: $color-primario;
+      font-weight:800;
+      margin: 5%;
+      padding-top: 5%;
+    
+  }

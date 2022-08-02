@@ -1,0 +1,26 @@
+@import "utilities/variable";
+/*===============================================================================================================================================  
+                                                              TERMINA INDEX COMIENZA DISCOGRAFIA
+   ================================================================================================================================================*/
+
+.nuestra_discografia{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    font-size: 45px;
+    color: $color-secundario;
+    font-weight: 575;
+   } 
+  
+  .p_class{
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 29px;
+      color: black;
+      font-weight: 460;
+      margin-left: 1%;
+      padding-left: 5%;
+      padding-right: 5;
+    }

@@ -1,0 +1,37 @@
+
+
+      /** Section **/
+section {
+  
+  margin: 20px 10px;
+  padding-left: 20px;
+  h3{  /** "Escucha nuestro nuevo album! **/
+    position: relative;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornsilk;
+
+  }
+  & .secdiv1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  & .secdiv2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+    }
+      /** IMAGEN MERCURY ACT 1**/
+
+  .a_album1 {
+    width: 50vw;
+  }
+      /** VIDEO PUESTO**/
+
+  iframe{
+    position: relative;
+    margin-top: 4%;
+    min-height: 27vw;
+  }

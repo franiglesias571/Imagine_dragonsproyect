@@ -6,12 +6,8 @@ body {
   background-image: url(../img/Wallpaper_imagine_dragons.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  /**USAR CUANDO HAGAS MEDIA QUERIE PARA TAMAÑO DE PANTALLA COMPLETA
-    
-     **/ }
+  background-size: cover; }
 
-/** FORMATO DE CSS HECHO CON MOBILE FIRST PARA APLICAR MEDIA QUERIES**/
 /** HEADER**/
 /** Logo de imagine Dragons**/
 .imgdr {
@@ -76,58 +72,6 @@ body {
 .header_escritorio {
   display: none !important; }
 
-.giffrontal {
-  width: 98%y;
-  display: flex;
-  justify-content: center;
-  margin-top: 0.5%;
-  padding-left: 0, auto;
-  height: 40vh; }
-
-.textocostado {
-  display: flex;
-  flex-direction: column; }
-
-.maindiv {
-  color: beige;
-  width: 93%;
-  line-height: 2em;
-  font-size: 15px; }
-
-/** Section **/
-section {
-  margin: 20px 10px;
-  padding-left: 20px; }
-  section h3 {
-    /** "Escucha nuestro nuevo album! **/
-    position: relative;
-    font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: cornsilk; }
-
-/** IMAGEN MERCURY ACT 1**/
-.a_album1 {
-  width: 55vw; }
-
-/** VIDEO PUESTO**/
-iframe {
-  position: relative;
-  margin-top: 4%;
-  min-height: 27vw; }
-
-/* ASIDE TEXTO PREVIO FOOTER */
-aside {
-  height: 89px;
-  margin-bottom: 4%;
-  text-align: center;
-  color: aliceblue; }
-  aside p {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    color: bisque;
-    /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/ }
-
 .footerclass {
   /* GRID */
   display: grid;
@@ -162,17 +106,69 @@ aside {
 .footerclass {
   background-image: linear-gradient(to left) rgba(135, 137, 139, 0.499); }
 
+.giffrontal {
+  width: 98%y;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5%;
+  padding-left: 0, auto;
+  height: 40vh; }
+
+.textocostado {
+  display: flex;
+  flex-direction: column; }
+
+.maindiv {
+  width: 93%;
+  line-height: 2em;
+  font-size: 15px; }
+  .maindiv h2 {
+    color: beige; }
+
+/** Section **/
+section {
+  margin: 20px 10px;
+  padding-left: 20px; }
+  section h3 {
+    /** "Escucha nuestro nuevo album! **/
+    position: relative;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornsilk; }
+  section .secdiv1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  section .secdiv2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+
+/** IMAGEN MERCURY ACT 1**/
+.a_album1 {
+  width: 50vw; }
+
+/** VIDEO PUESTO**/
+iframe {
+  position: relative;
+  margin-top: 4%;
+  min-height: 27vw; }
+
+/* ASIDE TEXTO PREVIO FOOTER */
+aside {
+  height: 89px;
+  margin-bottom: 4%;
+  text-align: center;
+  color: aliceblue; }
+  aside p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    color: bisque;
+    /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/ }
+
+/* TABLET */
 @media (min-width: 576px) and (max-width: 991px) {
-  body {
-    max-width: 100%;
-    padding: 0px;
-    margin: 0px;
-    font-family: Helvetica;
-    background-image: url(../img/Wallpaper_imagine_dragons.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
   .navbar-nav.navbar-center {
     position: absolute;
     left: 50%;
@@ -233,16 +229,6 @@ aside {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box; }
-  body {
-    max-width: 100%;
-    padding: 0px;
-    margin: 0px;
-    font-family: Helvetica;
-    background-image: url(../img/Wallpaper_imagine_dragons.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
   .imgdr {
     display: flex;
     justify-content: center; }
@@ -260,9 +246,9 @@ aside {
   .maindiv {
     padding: 2px 15px;
     margin-top: -5px; }
-  .maindiv h2 {
-    color: aliceblue;
-    font-size: 1.1em; }
+    .maindiv h2 {
+      color: aliceblue;
+      font-size: 1.1em; }
   .secdiv2 {
     right: 20%; }
   .div_sectionprincipal {
@@ -287,11 +273,10 @@ aside {
   height: 70px;
   text-align: center;
   color: aliceblue; }
-
-aside p {
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/ }
+  aside p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/ }
 
 .footerclass {
   background-color: rgba(135, 137, 139, 0.499);
@@ -336,7 +321,29 @@ aside p {
   padding-left: 5%;
   padding-right: 5; }
 
-.viejos_clasicos {
+/*===============================================================================================================================================  
+                                                              TERMINA INDEX COMIENZA DISCOGRAFIA
+   ================================================================================================================================================*/
+.nuestra_discografia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 45px;
+  color: bisque;
+  font-weight: 575; }
+
+.p_class {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 29px;
+  color: black;
+  font-weight: 460;
+  margin-left: 1%;
+  padding-left: 5%;
+  padding-right: 5; }
+
+section .viejos_clasicos {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -344,27 +351,18 @@ aside p {
   color: beige;
   font-weight: 300; }
 
-.album1 {
+section .flex_superior {
+  display: flex;
+  align-items: center;
+  align-content: space-between; }
+
+section .album1 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin: 5%;
   padding-top: 5%; }
-  .album1 p {
-    font-size: larger;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-weight: 800;
-    margin: 5%;
-    padding-top: 5%; }
-
-.album2 {
-  display: flex;
-  flex-direction: row-reverse;
-  align-content: space-between;
-  justify-content: center;
-  align-items: center; }
-  .album2 p {
+  section .album1 p {
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
     color: beige;
@@ -372,13 +370,14 @@ aside p {
     margin: 5%;
     padding-top: 5%; }
 
-.album3 {
+section .album2 {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-content: space-between;
   justify-content: center;
-  margin: 5%;
-  padding-top: 5%; }
-  .album3 p {
+  align-items: center;
+  margin-top: 5.5%; }
+  section .album2 p {
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -386,7 +385,20 @@ aside p {
     margin: 5%;
     padding-top: 5%; }
 
-/* ESCUCHA NUESTRO NUEVO REPERTORIO */
+section .album3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+  padding-top: 5%; }
+  section .album3 p {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    font-weight: 800;
+    margin: 5%;
+    padding-top: 5%; }
+
 .nuevo_repertorio {
   display: flex;
   justify-content: center; }
@@ -394,9 +406,9 @@ aside p {
 .album4 {
   display: flex;
   flex-direction: row;
-  align-content: space-between;
+  align-content: space-around;
   justify-content: center;
-  align-items: center; }
+  align-items: flex-end; }
   .album4 p {
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
@@ -408,8 +420,8 @@ aside p {
 .album5 {
   display: flex;
   flex-direction: row-reverse;
-  align-content: space-between;
-  align-items: center;
+  align-content: space-around;
+  align-items: flex-start;
   margin: 5%;
   padding-top: 5%; }
   .album5 p {
@@ -420,32 +432,52 @@ aside p {
     margin: 5%;
     padding-top: 5%; }
 
-/* ===============================================================================================
-       Media queries para Discografía                                 
-   =================================================================================================*/
 @media (min-width: 576px) and (max-width: 991px) {
-  .album1 {
+  .flex_superior .album1 {
     display: flex;
-    flex-direction: row; }
-  .album2 {
+    align-items: center;
+    margin: 5%;
+    padding-top: 5%; }
+  .flex_superior .album2 {
     display: flex;
-    flex-direction: row; }
-  .album3 {
+    flex-direction: row-reverse;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center; }
+  .flex_superior .album3 {
     display: flex;
-    flex-direction: row; } }
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    padding-top: 5%; } }
 
 @media (min-width: 992px) {
   .flex_superior {
-    display: flex; }
-  .album1 {
     display: flex;
+    justify-content: center;
     flex-direction: row; }
+  .album1 {
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .album2 {
     display: flex;
-    flex-direction: row; }
+    flex-direction: column;
+    justify-content: center; }
   .album3 {
     display: flex;
-    flex-direction: row; }
+    flex-direction: column;
+    justify-content: center; }
   .album4 {
     display: flex;
     flex-direction: row-reverse; } }
+
+/** FORMATO DE CSS HECHO CON MOBILE FIRST PARA APLICAR MEDIA QUERIES**/
+/*===============================================================================================================================================  
+                                                              TERMINA INDEX COMIENZA DISCOGRAFIA
+   ================================================================================================================================================*/
+/* ESCUCHA NUESTRO NUEVO REPERTORIO */
+/* ===============================================================================================
+       Media queries para Discografía                                 
+   =================================================================================================*/

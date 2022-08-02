@@ -1,0 +1,71 @@
+ /** HEADER**/
+  
+  /** Logo de imagine Dragons**/
+  .imgdr {
+    display: flex;
+    justify-content: center;
+    border-radius: 2%;
+    overflow: hidden;
+  }
+  
+  /**Div general del body**/
+  .contenedorgeneral{ 
+      width: 100%;
+  margin: 0 auto;
+  }
+  /* MENU HAMBURGUESA */
+  .btn-burger{
+    display: flex;
+  float: right;
+    width: 55px;
+    height: 55px;
+  background: none;
+    border-radius: 5px;
+    transition: all 0.7s ease-in-out;
+  }
+  
+  
+  .btn-burger-icon{
+    display: block;
+    margin: auto;
+    width: 30px;
+    height: 4px;
+    background-color: $color-primario;
+    border-radius: 2px;
+    transition: all 0.7s ease-in-out;
+    /* anidadas ambas clases :: before y :: after */ 
+    &::before {  content: '';
+        display: block;
+        margin: auto;
+        width: 30px;
+        height: 4px;
+        background-color: $color-primario;
+        border-radius: 2px;
+        transition: all 0.7s ease-in-out;
+        transform: translateY(-10px)  }
+      &::after {
+        content: '';
+        display: block;
+        margin: auto;
+        width: 30px;
+        height: 4px;
+        background-color: $color-primario;
+        border-radius: 2px;
+        transition: all 0.7s ease-in-out;
+        transform: translateY(6px)  }
+    }
+    
+  /* TERMINA MENU HAMBURGUESA */
+  .navheader{
+    a {
+        color: $color-secundario;
+    }
+    & a:hover{
+        color: red;
+        text-decoration: underline;
+    }
+
+  }  
+  .header_escritorio{
+    display: none !important;
+  }
