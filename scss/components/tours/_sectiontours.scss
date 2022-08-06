@@ -1,0 +1,33 @@
+@import "utilities/variable";
+@import "utilities/mixin_tours";
+
+
+section{
+
+    & .section_strongclass {
+        display: flex;
+        justify-content:center;
+        color: black;
+        padding: 1%;
+        
+         }
+
+    & .flex_container{
+        @include flex_container;
+        align-content: center;
+        justify-content: center;
+    }
+
+    & .fecha_tour{
+        @include fecha_tour
+    }
+    & .lugares_tour{
+        @include lugares_tour
+    }
+    & .link_localtour{
+        color: black;
+        text-decoration: none;
+    }
+
+      }
+

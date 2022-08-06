@@ -1,0 +1,23 @@
+@mixin flex_container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #fff;
+    width: 30rem;
+    margin-left: 2%;
+    background-color: #ffffff;   
+}
+
+@mixin fecha_tour {
+    background-color: red;
+    padding: 2rem;
+}
+
+@mixin lugares_tour {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}

@@ -473,6 +473,55 @@ section .album3 {
     display: flex;
     flex-direction: row-reverse; } }
 
+.mercury_tour {
+  display: flex;
+  justify-content: center;
+  color: black; }
+
+section .section_strongclass {
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding: 1%; }
+
+section .flex_container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #fff;
+  width: 30rem;
+  margin-left: 2%;
+  background-color: #ffffff;
+  align-content: center;
+  justify-content: center; }
+
+section .fecha_tour {
+  background-color: red;
+  padding: 2rem; }
+
+section .lugares_tour {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+section .link_localtour {
+  color: black;
+  text-decoration: none; }
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .flex_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .lugares_tour {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; } }
+
 /** FORMATO DE CSS HECHO CON MOBILE FIRST PARA APLICAR MEDIA QUERIES**/
 /*===============================================================================================================================================  
                                                               TERMINA INDEX COMIENZA DISCOGRAFIA

@@ -2,9 +2,11 @@
 //BASE = RESET DE TODAS LAS PAGINAS
 @import "base/reset";
 
-@import "utilities/variable";
-
 //UTILITIES  = VARIABLES, FUNCTIONS, MIXIN
+@import "utilities/variable";
+@import "utilities/mixin_tours";
+
+
 
 // COMPONENTS= FRAGMENTAR CODIGO EN BASE A SECCION BUSCADO
 @import "components/header";
@@ -33,6 +35,15 @@
 @import "components/discografia/album45sectiondiscografia";
 
 @import "components/discografia/mediaqueriesdiscografia";
+
+
+// COMIENZA IMPORTS DE TOURS
+
+@import "components/tours/h1tours";
+
+@import "components/tours/sectiontours";
+
+@import "components/tours/mediaqueriestours";
 
 
 
