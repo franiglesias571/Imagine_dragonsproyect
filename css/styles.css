@@ -490,7 +490,7 @@ section .flex_container {
   flex-direction: column;
   justify-content: center;
   border: 1px solid #fff;
-  width: 30rem;
+  width: 25rem;
   margin-left: 2%;
   background-color: #ffffff;
   align-content: center;
@@ -521,6 +521,54 @@ section .link_localtour {
     align-items: center;
     justify-content: space-around;
     width: 100%; } }
+
+.profile_imgdan .foto_dan {
+  width: 150px;
+  margin-right: 25px;
+  margin-bottom: 3px;
+  float: left; }
+
+.contenido_bloque {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 12px;
+  border: 2px;
+  border-style: solid;
+  border-color: wheat;
+  background-color: grey; }
+
+.nombre_artista {
+  display: flex;
+  justify-content: center; }
+
+.info_perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5%;
+  align-content: center; }
+
+.profile_imgwayne .foto_wayne {
+  height: 150px;
+  width: 200px;
+  float: left;
+  margin-right: 5%; }
+
+.profile_imgben .foto_ben {
+  height: 150px;
+  width: 200px;
+  float: left;
+  margin-right: 5%; }
+
+.h1_quienesomos {
+  display: flex;
+  justify-content: center;
+  color: #e09c4a;
+  font-weight: 600; }
+
+.texto_quienesomos {
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 /** FORMATO DE CSS HECHO CON MOBILE FIRST PARA APLICAR MEDIA QUERIES**/
 /*===============================================================================================================================================  
