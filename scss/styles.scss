@@ -19,8 +19,6 @@
 
 @import "components/index/sectionindex";
 
-@import "components/index/asideindex";
-
 @import "components/index/mediaqueriesindex";
 
 // TERMINA INDEX PAGE 
@@ -50,6 +48,12 @@
 
 @import "components/quienes_somos/sections_quienesomos";
 @import "components/quienes_somos/texto_quienesomos";
+
+// COMIENZA IMPORTS DE CONTACCTO
+@import "components/contacto/h1_form";
+@import "components/contacto/contacto_form";
+@import "components/contacto/mediaqueriescontacto"; 
+
 
 
 

@@ -1,9 +1,25 @@
 body {
     max-width: 100%;
+    margin-left: 0;
     font-family: Helvetica;
   /* Parallax del Wallpaper*/
    background-image: url(../img/Wallpaper_imagine_dragons.jpg);
+   background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+  }
+main{
+ 
+        background: rgb(11, 11, 11);
+background: linear-gradient(rgba(0, 0, 0, 0.557) 0%, rgba(9,9,121,0.458) 23%, rgba(0,0,0,0.458) 57%, rgba(127, 12, 135, 0.458) 85%);
+        background-size: cover;
+        margin-bottom: 0%;
+    
+}
+
+  .section_quinesomos{
+    margin-left: 0;
+    padding-left: 0;
+    
   }

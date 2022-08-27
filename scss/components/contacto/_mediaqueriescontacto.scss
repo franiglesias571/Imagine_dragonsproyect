@@ -1,0 +1,32 @@
+@media (min-width: 576px) and (max-width: 991px){
+
+    .estilo_formulario{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto_contacto{
+        padding-bottom: 5%;
+        padding-top: 7%;
+        text-align: center;
+    }
+
+    
+    
+}
+
+@media (min-width: 992px){
+    .estilo_formulario{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto_contacto{
+        padding-bottom: 5%;
+        padding-top: 7%;
+        text-align: center;
+    }
+
+
+
+}

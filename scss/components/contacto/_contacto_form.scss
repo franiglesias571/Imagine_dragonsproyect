@@ -1,0 +1,16 @@
+@import "utilities/variable";
+.estilo_formulario{
+    background-color: $color-gradiante_interior;
+    background: linear-gradient(rgba(0, 0, 0, 0.557) 0%, rgba(9,9,121,0.458) 23%, rgba(0,0,0,0.458) 57%, rgba(127, 12, 135, 0.458) 85%);
+        background-size: cover;
+        margin-bottom: 0%;
+    padding: 17%;
+    color: $color-primario;
+    font-family: 'Secular One', sans-serif;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(127, 12, 135, 0.149);
+   
+    
+    
+}

@@ -1,28 +1,39 @@
 
 
       /** Section **/
-section {
+      .div_sectionprincipal{
+   
   
-  margin: 20px 10px;
-  padding-left: 20px;
   h3{  /** "Escucha nuestro nuevo album! **/
     position: relative;
     font-size: 22px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: cornsilk;
+    text-align: center;
 
   }
+& .secdiv2{
+  padding-top: 5%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+ 
+  margin-left: 0%;
+  margin-right: 0%;
+
+}
   & .secdiv1 {
+    gap: 15%;
+    padding-top: 5%;
+    padding-bottom: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  & .secdiv2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-    }
+}
+    
       /** IMAGEN MERCURY ACT 1**/
 
   .a_album1 {
@@ -30,8 +41,20 @@ section {
   }
       /** VIDEO PUESTO**/
 
+      .secdiv2{
+        padding-top: 5%;
+        padding-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       
+        margin-left: 0%;
+        margin-right: 0%;
+      }
   iframe{
-    position: relative;
-    margin-top: 4%;
     min-height: 27vw;
   }
+
+  

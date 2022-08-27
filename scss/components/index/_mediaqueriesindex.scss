@@ -2,7 +2,14 @@
 
 @media (min-width: 576px) and (max-width: 991px)
   { 
-    
+    main{
+      padding: 0%;
+      padding: auto;
+      background: rgb(11, 11, 11);
+      background: linear-gradient(rgba(0, 0, 0, 0.557) 0%, rgba(9,9,121,0.458) 23%, rgba(0,0,0,0.458) 57%, rgba(127, 12, 135, 0.458) 85%);
+              background-size: cover;
+              margin-bottom: 0%;
+    }
     .navbar-nav.navbar-center {
       position: absolute;
       left: 50%;
@@ -12,82 +19,59 @@
     .btn-burger{
       display: none !important;
     }
-    .giffrontal { 
-      width: 75%;
-    
+  
+    .maindiv{
+      background: #0b0b0b ;
     }
     
-    .textocostado {
-    display: flex; 
-    justify-content:center ;
-    }
-    
-  
-    .textocostado {
-      display: grid; 
-      grid-template-rows: 2fr 1fr;
-      }
-      .maindiv {
-        width: 100%;
-        padding: 0;
-        margin-top: .2px;
-        font-size: 0.8em;
-        text-align: center;
-      }
-      .giffrontal{
-        width: 100%;
-      }
-  
-  
-    .secdiv2 {
-      padding-right: 0px;
-      }
-  
-      .div_sectionprincipal {
-  
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 5rem;
-        
-      }
-    
-      section h3 {
-        font-size: 35px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: cornsilk;
-      }
+      .titulo_maindiv{
+        line-height: normal;
+        text-align:end;
+        font-size: 1em
 
-       .a_album1 {
-          width: 45vw;
-          display: flex;
-          align-self:center
-          
-        }
-      
-        .a_album2 {
-          height: 31.5vh;
-          bottom: 3%;
-        }
-      
-      aside{
-        height: 70px;
-        padding: 20px 10px 10px 10px;
+      }
+      .div_sectionprincipal{
+        padding-top: 5%;
+        padding-bottom: 10%;
+        display: flex;
         text-align: center;
-        color: aliceblue;
-        
-       p{
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-              /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/
-            }
+        margin-left: 0%;
+        margin-right: 0%;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+   
+  
+       & h3{  /** "Escucha nuestro nuevo album! **/
+          position: relative;
+          font-size: 22px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color: cornsilk;
+      
         }
       
-    .footer_letras{
-      font-size: larger;
-      justify-self: baseline;
-      row-gap: 2rem;
-    }
+        iframe{
+          width: 100%;
+        }
+
+       
+        margin-left: 0%;
+        margin-right: 0%;
+      
+      }
+      
+      
+
+    
+    
+
+   
+    
+  
+    
+    
+    
   
    } 
 
@@ -95,18 +79,14 @@
    /* MEDIA QUERY DEL ESCRITORIO */
   
    @media (min-width: 993px) {
-    * {
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
+    main {
+      padding: auto;
+      background: rgb(11, 11, 11);
+      background: linear-gradient(rgba(0, 0, 0, 0.557) 0%, rgba(9,9,121,0.458) 23%, rgba(0,0,0,0.458) 57%, rgba(127, 12, 135, 0.458) 85%);
+              background-size: cover;
+              margin-bottom: 0%;
   }
   
-
-  
-  .imgdr {
-      display: flex;
-      justify-content: center;
-  }
   
   .navbar-nav.navbar-center {
     position: absolute;
@@ -132,6 +112,7 @@
     .maindiv {
       padding: 2px 15px;
       margin-top: -5px;
+      background: linear-gradient(rgba(0, 0, 0, 0.557) 0%, rgba(9, 9, 121, 0.458) 23%, rgba(0, 0, 0, 0.458) 57%, rgba(12, 110, 135, 0) 85%);
       
     
   
@@ -141,17 +122,41 @@
   }
 }
   .secdiv2 {
-  right: 20%; 
+    padding-top: 5%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ 
     }
   
-    .div_sectionprincipal {
-  
+    .div_sectionprincipal{
+      padding-top: 5%;
+      padding-bottom: 10%;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 20rem;
-      
+      text-align: center;
+      margin-left: 0%;
+      margin-right: 0%;
+      flex-direction: row-reverse;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      justify-content: center;
+ 
+
+      h3{  /** "Escucha nuestro nuevo album! **/
+        position: relative;
+        font-size: 22px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: cornsilk;
+    
+      }
+     
+      margin-left: 0%;
+      margin-right: 0%;
+    
     }
   
     section h3 {
@@ -159,56 +164,17 @@
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       color: cornsilk;
     }
-  
-    .a_album1 {
-      width: 25vw;
-      display: flex;
-      align-self:center
-      
+
+    iframe{
+      width: 120%;
     }
-  .a_album2 {
-    width: 30vw;
-    left: 3rem;
-  
-  }
+    
+
   
     }
   
     aside{
       height: 70px;
       text-align: center;
-      color: aliceblue;
-    
-    & p {
-      font-size: 20px;
-      font-family: Arial, Helvetica, sans-serif;
-        /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/
-      }
-      }
-  
-      .footerclass{ background-color: rgba(135, 137, 139, 0.499);
-        position: relative;
-         
-        
-      }
-      
-      .redes_sociales {
-          display: flex;
-          justify-content: flex-end;
-          left: 14px;
-      }
-      .footer_letras {
-        display: flex;
-        top: 70%;
-        flex-direction: row;
-        p {
-            font-size: larger;
-            color: bisque;
-          }
-    
-      }
-      
-      .logofooter{ width: 17.5%;
-        top: 50px;
-        
-      } 
+      color: aliceblue;}       
+   

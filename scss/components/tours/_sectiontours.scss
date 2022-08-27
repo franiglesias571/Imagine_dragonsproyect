@@ -1,5 +1,14 @@
-@import "utilities/variable";
-@import "utilities/mixin_tours";
+
+    .div_titulo {
+        background-color: $color-gradiante_interior;
+        margin-bottom: 5%;
+        padding: 5;
+        width: 100%;
+
+        & .mercury_tour{
+            font-family: 'Secular One', sans-serif;
+        }
+        }
 
 
 section{
@@ -7,26 +16,61 @@ section{
     & .section_strongclass {
         display: flex;
         justify-content:center;
-        color: black;
+        text-align: center;
+        color: $color-primario;
+        font-family: 'Secular One', sans-serif;
+        font-size: medium ;
+        font-weight: 500;
         padding: 1%;
-        
+
          }
 
     & .flex_container{
         @include flex_container;
         align-content: center;
         justify-content: center;
+        box-shadow: 0 5px 10px 0;
+        gap: 5%; 
+        margin: 10%;
+        
+    }
+    & .izquierda {
+        margin-left: 0%;
+        margin-right: auto;
+
+    }
+    & .derecha {
+        margin-right: 0%;
+        margin-left: auto;
+        
     }
 
     & .fecha_tour{
-        @include fecha_tour
+        @include fecha_tour;
+        display: flex;
+        justify-content:center;
+        text-align: center;
+        font-family: 'Aboreto', cursive;
+        color: rgb(208, 213, 213);
+        
     }
+    & .letra_fecha {
+        font-size: 25px;
+    }
+    
+
     & .lugares_tour{
-        @include lugares_tour
+        @include lugares_tour;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        font-family: 'Aboreto', cursive;
     }
     & .link_localtour{
         color: black;
+        font-family: 'Aboreto', cursive;
         text-decoration: none;
+            
     }
 
       }

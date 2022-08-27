@@ -1,12 +1,24 @@
 @charset "UTF-8";
 body {
   max-width: 100%;
+  margin-left: 0;
   font-family: Helvetica;
   /* Parallax del Wallpaper*/
   background-image: url(../img/Wallpaper_imagine_dragons.jpg);
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+main {
+  background: #0b0b0b;
+  background: linear-gradient(rgba(0, 0, 0, 0.557) 0%, rgba(9, 9, 121, 0.458) 23%, rgba(0, 0, 0, 0.458) 57%, rgba(127, 12, 135, 0.458) 85%);
+  background-size: cover;
+  margin-bottom: 0%; }
+
+.section_quinesomos {
+  margin-left: 0;
+  padding-left: 0; }
 
 /** HEADER**/
 /** Logo de imagine Dragons**/
@@ -73,165 +85,164 @@ body {
   display: none !important; }
 
 .footerclass {
-  /* GRID */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "g1 g3 g2";
-  align-items: center; }
+  background: #56095b;
+  background: linear-gradient(rgba(127, 12, 135, 0.458) 0%, rgba(6, 6, 83, 0.482) 23%, rgba(0, 0, 0, 0.788) 57%, rgba(0, 0, 0, 0.811) 85%);
+  background-size: cover;
+  margin: auto; }
+  .footerclass .footer_info {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center; }
+  .footerclass .footer_letras {
+    display: flex;
+    top: 70%;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    font-size: 70%;
+    letter-spacing: 2.5px;
+    font-family: 'Secular One', sans-serif;
+    color: beige; }
+  .footerclass .logofooter {
+    width: 30%;
+    float: left;
+    padding-top: 5%;
+    padding-bottom: 5%; }
 
-.logofooter {
-  grid-area: g1;
-  width: 50vw; }
+@media (min-width: 576px) and (max-width: 991px) {
+  main {
+    background: #0b0b0b;
+    background: linear-gradient(rgba(0, 0, 0, 0.557) 0%, rgba(9, 9, 121, 0.458) 23%, rgba(0, 0, 0, 0.458) 57%, rgba(127, 12, 135, 0.458) 85%);
+    background-size: cover;
+    margin-bottom: 0%; } }
 
-.redes_sociales {
-  grid-area: g2;
-  display: flex;
-  justify-content: end; }
+main {
+  padding: 10%; }
 
-.footer_letras {
-  grid-area: g3;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  padding: 0px 10%;
-  padding-top: 10%;
-  padding-left: 5%;
-  color: bisque;
-  font-size: small; }
-  .footer_letras p {
-    padding: 0px 3%;
-    position: relative;
-    color: bisque; }
+.mainprincipal_index {
+  background: #56095b;
+  background: linear-gradient(rgba(127, 12, 135, 0.458) 0%, rgba(9, 9, 121, 0.458) 23%, rgba(0, 0, 0, 0.458) 57%, rgba(0, 0, 0, 0.458) 85%);
+  background-size: cover; }
 
-.footerclass {
-  background-image: linear-gradient(to left) rgba(135, 137, 139, 0.499); }
-
-.giffrontal {
-  width: 98%y;
-  display: flex;
-  justify-content: center;
-  margin-top: 0.5%;
-  padding-left: 0, auto;
-  height: 40vh; }
-
-.textocostado {
-  display: flex;
-  flex-direction: column; }
+.carrusel {
+  padding: 0%;
+  width: fit-content;
+  height: 150%; }
 
 .maindiv {
-  width: 93%;
-  line-height: 2em;
-  font-size: 15px; }
-  .maindiv h2 {
-    color: beige; }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1em;
+  background: #0b0b0b;
+  background: linear-gradient(rgba(0, 0, 0, 0.557) 0%, rgba(9, 9, 121, 0.458) 23%, rgba(0, 0, 0, 0.458) 57%, rgba(127, 12, 135, 0.458) 85%);
+  background-size: cover; }
+  .maindiv .titulo_maindiv {
+    font-family: 'Secular One', sans-serif;
+    color: beige;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: auto;
+    padding-top: 2.5%;
+    padding-bottom: 5%; }
 
 /** Section **/
-section {
-  margin: 20px 10px;
-  padding-left: 20px; }
-  section h3 {
-    /** "Escucha nuestro nuevo album! **/
-    position: relative;
-    font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: cornsilk; }
-  section .secdiv1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-  section .secdiv2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
+.div_sectionprincipal h3 {
+  /** "Escucha nuestro nuevo album! **/
+  position: relative;
+  font-size: 22px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: cornsilk;
+  text-align: center; }
+
+.div_sectionprincipal .secdiv2 {
+  padding-top: 5%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 0%;
+  margin-right: 0%; }
+
+.div_sectionprincipal .secdiv1 {
+  gap: 15%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 /** IMAGEN MERCURY ACT 1**/
 .a_album1 {
   width: 50vw; }
 
 /** VIDEO PUESTO**/
-iframe {
-  position: relative;
-  margin-top: 4%;
-  min-height: 27vw; }
-
-/* ASIDE TEXTO PREVIO FOOTER */
-aside {
-  height: 89px;
-  margin-bottom: 4%;
+.secdiv2 {
+  padding-top: 5%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  color: aliceblue; }
-  aside p {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    color: bisque;
-    /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/ }
+  align-items: center;
+  margin-left: 0%;
+  margin-right: 0%; }
+
+iframe {
+  min-height: 27vw; }
 
 /* TABLET */
 @media (min-width: 576px) and (max-width: 991px) {
+  main {
+    padding: 0%;
+    padding: auto;
+    background: #0b0b0b;
+    background: linear-gradient(rgba(0, 0, 0, 0.557) 0%, rgba(9, 9, 121, 0.458) 23%, rgba(0, 0, 0, 0.458) 57%, rgba(127, 12, 135, 0.458) 85%);
+    background-size: cover;
+    margin-bottom: 0%; }
   .navbar-nav.navbar-center {
     position: absolute;
     left: 50%;
     transform: translatex(-50%); }
   .btn-burger {
     display: none !important; }
-  .giffrontal {
-    width: 75%; }
-  .textocostado {
-    display: flex;
-    justify-content: center; }
-  .textocostado {
-    display: grid;
-    grid-template-rows: 2fr 1fr; }
   .maindiv {
-    width: 100%;
-    padding: 0;
-    margin-top: .2px;
-    font-size: 0.8em;
-    text-align: center; }
-  .giffrontal {
-    width: 100%; }
-  .secdiv2 {
-    padding-right: 0px; }
+    background: #0b0b0b; }
+  .titulo_maindiv {
+    line-height: normal;
+    text-align: end;
+    font-size: 1em; }
   .div_sectionprincipal {
+    padding-top: 5%;
+    padding-bottom: 10%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5rem; }
-  section h3 {
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: cornsilk; }
-  .a_album1 {
-    width: 45vw;
-    display: flex;
-    align-self: center; }
-  .a_album2 {
-    height: 31.5vh;
-    bottom: 3%; }
-  aside {
-    height: 70px;
-    padding: 20px 10px 10px 10px;
     text-align: center;
-    color: aliceblue; }
-    aside p {
-      font-size: 20px;
-      font-family: Arial, Helvetica, sans-serif;
-      /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/ }
-  .footer_letras {
-    font-size: larger;
-    justify-self: baseline;
-    row-gap: 2rem; } }
+    margin-left: 0%;
+    margin-right: 0%;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 0%;
+    margin-right: 0%; }
+    .div_sectionprincipal h3 {
+      /** "Escucha nuestro nuevo album! **/
+      position: relative;
+      font-size: 22px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: cornsilk; }
+    .div_sectionprincipal iframe {
+      width: 100%; } }
 
 /* MEDIA QUERY DEL ESCRITORIO */
 @media (min-width: 993px) {
-  * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box; }
-  .imgdr {
-    display: flex;
-    justify-content: center; }
+  main {
+    padding: auto;
+    background: #0b0b0b;
+    background: linear-gradient(rgba(0, 0, 0, 0.557) 0%, rgba(9, 9, 121, 0.458) 23%, rgba(0, 0, 0, 0.458) 57%, rgba(127, 12, 135, 0.458) 85%);
+    background-size: cover;
+    margin-bottom: 0%; }
   .navbar-nav.navbar-center {
     position: absolute;
     left: 50%;
@@ -245,59 +256,50 @@ aside {
     text-decoration: underline; }
   .maindiv {
     padding: 2px 15px;
-    margin-top: -5px; }
+    margin-top: -5px;
+    background: linear-gradient(rgba(0, 0, 0, 0.557) 0%, rgba(9, 9, 121, 0.458) 23%, rgba(0, 0, 0, 0.458) 57%, rgba(12, 110, 135, 0) 85%); }
     .maindiv h2 {
       color: aliceblue;
       font-size: 1.1em; }
   .secdiv2 {
-    right: 20%; }
-  .div_sectionprincipal {
+    padding-top: 5%;
+    padding-bottom: 10%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 20rem; }
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+  .div_sectionprincipal {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    display: flex;
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 0%;
+    margin-right: 0%; }
+    .div_sectionprincipal h3 {
+      /** "Escucha nuestro nuevo album! **/
+      position: relative;
+      font-size: 22px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: cornsilk; }
   section h3 {
     font-size: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: cornsilk; }
-  .a_album1 {
-    width: 25vw;
-    display: flex;
-    align-self: center; }
-  .a_album2 {
-    width: 30vw;
-    left: 3rem; } }
+  iframe {
+    width: 120%; } }
 
 aside {
   height: 70px;
   text-align: center;
   color: aliceblue; }
-  aside p {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/ }
-
-.footerclass {
-  background-color: rgba(135, 137, 139, 0.499);
-  position: relative; }
-
-.redes_sociales {
-  display: flex;
-  justify-content: flex-end;
-  left: 14px; }
-
-.footer_letras {
-  display: flex;
-  top: 70%;
-  flex-direction: row; }
-  .footer_letras p {
-    font-size: larger;
-    color: bisque; }
-
-.logofooter {
-  width: 17.5%;
-  top: 50px; }
 
 /*===============================================================================================================================================  
                                                               TERMINA INDEX COMIENZA DISCOGRAFIA
@@ -310,6 +312,10 @@ aside {
   color: bisque;
   font-weight: 575; }
 
+.intro {
+  background: black;
+  font-family: 'Secular One', sans-serif; }
+
 .p_class {
   display: flex;
   flex-direction: row;
@@ -317,9 +323,9 @@ aside {
   font-size: 29px;
   color: black;
   font-weight: 460;
-  margin-left: 1%;
   padding-left: 5%;
-  padding-right: 5; }
+  padding-right: 5;
+  color: white; }
 
 /*===============================================================================================================================================  
                                                               TERMINA INDEX COMIENZA DISCOGRAFIA
@@ -332,6 +338,10 @@ aside {
   color: bisque;
   font-weight: 575; }
 
+.intro {
+  background: black;
+  font-family: 'Secular One', sans-serif; }
+
 .p_class {
   display: flex;
   flex-direction: row;
@@ -339,9 +349,9 @@ aside {
   font-size: 29px;
   color: black;
   font-weight: 460;
-  margin-left: 1%;
   padding-left: 5%;
-  padding-right: 5; }
+  padding-right: 5;
+  color: white; }
 
 section .viejos_clasicos {
   display: flex;
@@ -352,16 +362,13 @@ section .viejos_clasicos {
   font-weight: 300; }
 
 section .flex_superior {
-  display: flex;
   align-items: center;
   align-content: space-between; }
 
 section .album1 {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  margin: 5%;
-  padding-top: 5%; }
+  justify-content: flex-end; }
   section .album1 p {
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
@@ -375,8 +382,7 @@ section .album2 {
   flex-direction: column;
   align-content: space-between;
   justify-content: center;
-  align-items: center;
-  margin-top: 5.5%; }
+  align-items: center; }
   section .album2 p {
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
@@ -389,7 +395,6 @@ section .album3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5%;
   padding-top: 5%; }
   section .album3 p {
     font-size: larger;
@@ -433,142 +438,329 @@ section .album3 {
     padding-top: 5%; }
 
 @media (min-width: 576px) and (max-width: 991px) {
+  .intro {
+    background: black;
+    font-family: 'Secular One', sans-serif; }
+  .p_class {
+    margin: 0%;
+    color: white; }
   .flex_superior .album1 {
+    background-image: url(/img/night_visions_discografia_frontjpg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    align-items: center;
-    margin: 5%;
-    padding-top: 5%; }
+    align-items: baseline;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-direction: row-reverse; }
   .flex_superior .album2 {
+    background-image: url(/img/smoke+mirrors_discografia_front.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    margin: 0%; }
+  .flex_superior .foto_solid {
+    opacity: solid; }
+  .flex_superior .album3 {
+    background-image: url(/img/evolve_discografia_front.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: baseline;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-direction: row-reverse;
+    margin: 0%; }
+  .flex_superior .album4 {
+    background-image: url(/img/origins_discografia_front.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: row-reverse;
     align-content: space-between;
-    justify-content: center;
-    align-items: center; }
-  .flex_superior .album3 {
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    margin: 0%; }
+  .flex_superior .album5 {
+    margin: 0%;
+    background-image: url(/img/mercuryact1_discografia_front.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5%;
-    padding-top: 5%; } }
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 30%;
+    padding-bottom: 30%; }
+  .flex_superior .pad_album {
+    padding-top: 20%; }
+  .flex_superior .foto_album {
+    width: 22rem; } }
 
 @media (min-width: 992px) {
-  .flex_superior {
-    display: flex;
-    justify-content: center;
-    flex-direction: row; }
+  .p_class {
+    margin: 0%;
+    color: white; }
   .album1 {
-    width: 22vw;
+    background-image: url(/img/night_visions_discografia_frontjpg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
     display: flex;
+    align-items: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    justify-content: space-evenly;
+    align-content: center;
     flex-direction: column;
-    justify-content: center; }
+    margin: 0%; }
   .album2 {
+    background-image: url(/img/smoke+mirrors_discografia_front.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
     display: flex;
+    align-items: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    justify-content: space-evenly;
+    align-content: center;
     flex-direction: column;
-    justify-content: center; }
+    margin: 0%; }
+  .foto_solid {
+    opacity: solid; }
   .album3 {
+    background-image: url(/img/evolve_discografia_front.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
     display: flex;
+    align-items: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    justify-content: space-evenly;
+    align-content: center;
     flex-direction: column;
-    justify-content: center; }
+    margin: 0%; }
   .album4 {
+    background-image: url(/img/origins_discografia_front.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
     display: flex;
-    flex-direction: row-reverse; } }
+    align-items: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: column;
+    margin: 0%; }
+  .album5 {
+    margin: 0%;
+    background-image: url(/img/mercuryact1_discografia_front.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: column;
+    margin: 0%; }
+  .foto_album {
+    width: 22rem; } }
 
 .mercury_tour {
   display: flex;
   justify-content: center;
-  color: black; }
+  color: white; }
+
+.div_titulo {
+  background-color: #0b0b0b;
+  margin-bottom: 5%;
+  padding: 5;
+  width: 100%; }
+  .div_titulo .mercury_tour {
+    font-family: 'Secular One', sans-serif; }
 
 section .section_strongclass {
   display: flex;
   justify-content: center;
-  color: black;
+  text-align: center;
+  color: beige;
+  font-family: 'Secular One', sans-serif;
+  font-size: medium;
+  font-weight: 500;
   padding: 1%; }
 
 section .flex_container {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid #fff;
-  width: 25rem;
-  margin-left: 2%;
-  background-color: #ffffff;
+  border: 1px solid #5f5252;
+  width: auto;
+  background-color: rgba(125, 198, 186, 0.464);
+  margin-left: auto;
   align-content: center;
-  justify-content: center; }
+  justify-content: center;
+  box-shadow: 0 5px 10px 0;
+  gap: 5%;
+  margin: 10%; }
+
+section .izquierda {
+  margin-left: 0%;
+  margin-right: auto; }
+
+section .derecha {
+  margin-right: 0%;
+  margin-left: auto; }
 
 section .fecha_tour {
-  background-color: red;
-  padding: 2rem; }
+  background-color: #255d53;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Aboreto', cursive;
+  color: #d0d5d5; }
+
+section .letra_fecha {
+  font-size: 25px; }
 
 section .lugares_tour {
   height: 10rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Aboreto', cursive; }
 
 section .link_localtour {
   color: black;
+  font-family: 'Aboreto', cursive;
   text-decoration: none; }
 
 @media (min-width: 576px) and (max-width: 991px) {
   .flex_container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: 10%; }
   .lugares_tour {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 100%; } }
+    width: 100%; }
+  .letra_fecha {
+    font-size: 25px; } }
 
-.profile_imgdan .foto_dan {
-  width: 150px;
-  margin-right: 25px;
-  margin-bottom: 3px;
-  float: left; }
+@media (min-width: 992px) {
+  .letra_fecha {
+    font-size: 35px; } }
 
-.contenido_bloque {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 12px;
-  border: 2px;
-  border-style: solid;
-  border-color: wheat;
-  background-color: grey; }
+.texto_fotoquienesomos {
+  display: flex; }
+  .texto_fotoquienesomos .fotoquienesomos {
+    width: 100%; }
 
-.nombre_artista {
-  display: flex;
-  justify-content: center; }
+.textoquienesomos {
+  color: white;
+  font-family: 'Secular One', sans-serif;
+  text-align: center; }
+  .textoquienesomos p {
+    margin-bottom: 0%; }
 
-.info_perfil {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 5%;
-  align-content: center; }
+.texto_fotoquienesomos2 {
+  display: flex; }
+  .texto_fotoquienesomos2 .fotoquienesomos2 {
+    width: 100%; }
 
-.profile_imgwayne .foto_wayne {
-  height: 150px;
-  width: 200px;
-  float: left;
-  margin-right: 5%; }
-
-.profile_imgben .foto_ben {
-  height: 150px;
-  width: 200px;
-  float: left;
-  margin-right: 5%; }
+.textoquienesomos2 {
+  color: white;
+  font-family: 'Secular One', sans-serif;
+  text-align: center; }
+  .textoquienesomos2 p {
+    margin-bottom: 0%; }
 
 .h1_quienesomos {
   display: flex;
   justify-content: center;
-  color: #e09c4a;
-  font-weight: 600; }
+  color: whitesmoke;
+  font-weight: 300;
+  font-family: 'Secular One', sans-serif; }
 
 .texto_quienesomos {
   font-size: medium;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.texto_contacto {
+  color: white;
+  font-family: 'Secular One', sans-serif; }
+
+.estilo_formulario {
+  background-color: #0b0b0b;
+  background: linear-gradient(rgba(0, 0, 0, 0.557) 0%, rgba(9, 9, 121, 0.458) 23%, rgba(0, 0, 0, 0.458) 57%, rgba(127, 12, 135, 0.458) 85%);
+  background-size: cover;
+  margin-bottom: 0%;
+  padding: 17%;
+  color: beige;
+  font-family: 'Secular One', sans-serif;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(127, 12, 135, 0.149); }
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .estilo_formulario {
+    display: flex;
+    flex-direction: column; }
+  .texto_contacto {
+    padding-bottom: 5%;
+    padding-top: 7%;
+    text-align: center; } }
+
+@media (min-width: 992px) {
+  .estilo_formulario {
+    display: flex;
+    flex-direction: column; }
+  .texto_contacto {
+    padding-bottom: 5%;
+    padding-top: 7%;
+    text-align: center; } }
 
 /** FORMATO DE CSS HECHO CON MOBILE FIRST PARA APLICAR MEDIA QUERIES**/
 /*===============================================================================================================================================  

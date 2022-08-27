@@ -1,16 +1,14 @@
 @mixin flex_container {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid #fff;
-    width: 25rem;
-    margin-left: 2%;
-    background-color: #ffffff;   
+    border: 1px solid rgb(95, 82, 82); 
+    width: auto;
+    background-color: rgba(125, 198, 186, 0.464);
+    margin-left: auto;
+
+   
 }
 
 @mixin fecha_tour {
-    background-color: red;
+    background-color: rgba(37, 93, 83, 1);
     padding: 2rem;
 }
 

@@ -1,55 +1,37 @@
-.profile_imgdan{
-    & .foto_dan {
-        width: 150px;
-        margin-right: 25px;
-        margin-bottom: 3px;
-        float: left;
-      }
-
-}
-
-.contenido_bloque{
+.texto_fotoquienesomos{
     display: flex;
-    flex-direction: column;
-    box-shadow: 12px;
-    border: 2px;
-    border-style: solid;
-    border-color: wheat;
-    background-color: grey;
+
+    .fotoquienesomos{
+        width: 100%;
+    }  
 }
 
-.nombre_artista {
-    display: flex;
-    justify-content: center;
-}
+.textoquienesomos{
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
 
-.info_perfil {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 5%;
-    align-content: center;
-    
-}
-
-.profile_imgwayne{
-        & .foto_wayne{
-            height: 150px;
-            width: 200px;
-            float: left;
-            margin-right: 5%;
-        }
-}
-
-
-.profile_imgben{
-    & .foto_ben{
-        height: 150px;
-        width: 200px;
-        float: left;
-        margin-right: 5%;
+    p{
+        margin-bottom: 0%;
     }
 }
 
+.texto_fotoquienesomos2{
+    display: flex;
+
+    .fotoquienesomos2{
+        width: 100%;
+    }  
+}
+
+.textoquienesomos2{
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+
+    p{
+        margin-bottom: 0%;
+    }
+}
 
 
