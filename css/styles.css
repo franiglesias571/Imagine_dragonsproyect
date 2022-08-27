@@ -304,23 +304,29 @@ aside {
 /*===============================================================================================================================================  
                                                               TERMINA INDEX COMIENZA DISCOGRAFIA
    ================================================================================================================================================*/
+main {
+  padding: 0%; }
+
 .nuestra_discografia {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 45px;
+  font-size: 25px;
   color: bisque;
   font-weight: 575; }
 
 .intro {
   background: black;
-  font-family: 'Secular One', sans-serif; }
+  font-family: 'Secular One', sans-serif;
+  margin: 0%;
+  padding: 0%; }
 
 .p_class {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 29px;
+  text-align: center;
+  font-size: 19px;
   color: black;
   font-weight: 460;
   padding-left: 5%;
@@ -330,23 +336,29 @@ aside {
 /*===============================================================================================================================================  
                                                               TERMINA INDEX COMIENZA DISCOGRAFIA
    ================================================================================================================================================*/
+main {
+  padding: 0%; }
+
 .nuestra_discografia {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 45px;
+  font-size: 25px;
   color: bisque;
   font-weight: 575; }
 
 .intro {
   background: black;
-  font-family: 'Secular One', sans-serif; }
+  font-family: 'Secular One', sans-serif;
+  margin: 0%;
+  padding: 0%; }
 
 .p_class {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 29px;
+  text-align: center;
+  font-size: 19px;
   color: black;
   font-weight: 460;
   padding-left: 5%;
@@ -368,7 +380,9 @@ section .flex_superior {
 section .album1 {
   display: flex;
   align-items: center;
-  justify-content: flex-end; }
+  justify-content: space-between;
+  align-content: stretch;
+  flex-direction: row-reverse; }
   section .album1 p {
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
@@ -379,7 +393,7 @@ section .album1 {
 
 section .album2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-content: space-between;
   justify-content: center;
   align-items: center; }
@@ -393,8 +407,12 @@ section .album2 {
 
 section .album3 {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 5%;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: stretch;
   padding-top: 5%; }
   section .album3 p {
     font-size: larger;
@@ -403,6 +421,13 @@ section .album3 {
     font-weight: 800;
     margin: 5%;
     padding-top: 5%; }
+
+section .album4 {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+  align-items: baseline; }
 
 .nuevo_repertorio {
   display: flex;
@@ -455,8 +480,8 @@ section .album3 {
     padding-top: 30%;
     padding-bottom: 30%;
     justify-content: space-between;
-    align-content: flex-start;
-    flex-direction: row-reverse; }
+    align-items: center;
+    flex-direction: column; }
   .flex_superior .album2 {
     background-image: url(/img/smoke+mirrors_discografia_front.jpg);
     background-attachment: fixed;
@@ -464,10 +489,10 @@ section .album3 {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: space-between;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     padding-top: 30%;
     padding-bottom: 30%;
     margin: 0%; }
@@ -480,12 +505,12 @@ section .album3 {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     padding-top: 30%;
     padding-bottom: 30%;
     justify-content: space-between;
     align-content: flex-start;
-    flex-direction: row-reverse;
+    flex-direction: column;
     margin: 0%; }
   .flex_superior .album4 {
     background-image: url(/img/origins_discografia_front.jpg);
@@ -494,10 +519,9 @@ section .album3 {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: row-reverse;
-    align-content: space-between;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
     padding-top: 30%;
     padding-bottom: 30%;
     margin: 0%; }
@@ -512,7 +536,7 @@ section .album3 {
     flex-direction: row;
     align-content: space-between;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     padding-top: 30%;
     padding-bottom: 30%; }
   .flex_superior .pad_album {
@@ -524,85 +548,79 @@ section .album3 {
   .p_class {
     margin: 0%;
     color: white; }
-  .album1 {
+  .flex_superior .album1 {
     background-image: url(/img/night_visions_discografia_frontjpg.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     padding-top: 30%;
     padding-bottom: 30%;
-    justify-content: space-evenly;
-    align-content: center;
-    flex-direction: column;
-    margin: 0%; }
-  .album2 {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+  .flex_superior .album2 {
     background-image: url(/img/smoke+mirrors_discografia_front.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1;
     display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
     align-items: center;
     padding-top: 30%;
     padding-bottom: 30%;
-    justify-content: space-evenly;
-    align-content: center;
-    flex-direction: column;
     margin: 0%; }
-  .foto_solid {
+  .flex_superior .foto_solid {
     opacity: solid; }
-  .album3 {
+  .flex_superior .album3 {
     background-image: url(/img/evolve_discografia_front.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1;
     display: flex;
     align-items: center;
     padding-top: 30%;
     padding-bottom: 30%;
-    justify-content: space-evenly;
-    align-content: center;
+    justify-content: space-between;
+    align-content: flex-start;
     flex-direction: column;
     margin: 0%; }
-  .album4 {
+  .flex_superior .album4 {
     background-image: url(/img/origins_discografia_front.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1;
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     padding-top: 30%;
     padding-bottom: 30%;
-    justify-content: space-evenly;
-    align-content: center;
-    flex-direction: column;
     margin: 0%; }
-  .album5 {
+  .flex_superior .album5 {
     margin: 0%;
     background-image: url(/img/mercuryact1_discografia_front.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1;
     display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
     align-items: center;
     padding-top: 30%;
-    padding-bottom: 30%;
-    justify-content: space-evenly;
-    align-content: center;
-    flex-direction: column;
-    margin: 0%; }
-  .foto_album {
+    padding-bottom: 30%; }
+  .flex_superior .pad_album {
+    padding-top: 20%; }
+  .flex_superior .foto_album {
     width: 22rem; } }
 
 .mercury_tour {

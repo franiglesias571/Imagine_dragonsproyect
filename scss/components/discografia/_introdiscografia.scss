@@ -2,18 +2,22 @@
 /*===============================================================================================================================================  
                                                               TERMINA INDEX COMIENZA DISCOGRAFIA
    ================================================================================================================================================*/
-
+main{
+  padding: 0%;
+}
 .nuestra_discografia{
     display: flex;
     flex-direction: row;
     justify-content:center ;
-    font-size: 45px;
+    font-size: 25px;
     color: $color-secundario;
     font-weight: 575;
    } 
    .intro{
     background: black;
     font-family: 'Secular One', sans-serif;
+    margin: 0%;
+    padding: 0%;
 
   }
   
@@ -22,7 +26,8 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      font-size: 29px;
+      text-align: center;
+      font-size: 19px;
       color: black;
       font-weight: 460;
       padding-left: 5%;
