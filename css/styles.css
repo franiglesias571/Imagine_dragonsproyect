@@ -477,7 +477,7 @@ section .album4 {
     background-size: cover;
     display: flex;
     align-items: baseline;
-    padding-top: 30%;
+    padding-top: 20%;
     padding-bottom: 30%;
     justify-content: space-between;
     align-items: center;
@@ -493,8 +493,8 @@ section .album4 {
     align-content: space-between;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30%;
-    padding-bottom: 30%;
+    padding-top: 10%;
+    padding-bottom: 20%;
     margin: 0%; }
   .flex_superior .foto_solid {
     opacity: solid; }
@@ -506,8 +506,8 @@ section .album4 {
     background-size: cover;
     display: flex;
     align-items: center;
-    padding-top: 30%;
-    padding-bottom: 30%;
+    padding-top: 10%;
+    padding-bottom: 20%;
     justify-content: space-between;
     align-content: flex-start;
     flex-direction: column;
@@ -522,8 +522,8 @@ section .album4 {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    padding-top: 30%;
-    padding-bottom: 30%;
+    padding-top: 20%;
+    padding-bottom: 20%;
     margin: 0%; }
   .flex_superior .album5 {
     margin: 0%;
@@ -533,12 +533,12 @@ section .album4 {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: space-between;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30%;
-    padding-bottom: 30%; }
+    padding-top: 15%;
+    padding-bottom: 5%; }
   .flex_superior .pad_album {
     padding-top: 20%; }
   .flex_superior .foto_album {
@@ -556,8 +556,8 @@ section .album4 {
     background-size: cover;
     display: flex;
     align-items: baseline;
-    padding-top: 30%;
-    padding-bottom: 30%;
+    padding-top: 0%;
+    padding-bottom: 5%;
     justify-content: space-between;
     align-items: center;
     flex-direction: column; }
@@ -572,8 +572,8 @@ section .album4 {
     align-content: space-between;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30%;
-    padding-bottom: 30%;
+    padding-top: 0%;
+    padding-bottom: 5%;
     margin: 0%; }
   .flex_superior .foto_solid {
     opacity: solid; }
@@ -585,8 +585,8 @@ section .album4 {
     background-size: cover;
     display: flex;
     align-items: center;
-    padding-top: 30%;
-    padding-bottom: 30%;
+    padding-top: 0%;
+    padding-bottom: 5%;
     justify-content: space-between;
     align-content: flex-start;
     flex-direction: column;
@@ -601,8 +601,8 @@ section .album4 {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    padding-top: 30%;
-    padding-bottom: 30%;
+    padding-top: 0%;
+    padding-bottom: 5%;
     margin: 0%; }
   .flex_superior .album5 {
     margin: 0%;
@@ -612,12 +612,12 @@ section .album4 {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: space-between;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30%;
-    padding-bottom: 30%; }
+    padding-top: 0%;
+    padding-bottom: 5%; }
   .flex_superior .pad_album {
     padding-top: 20%; }
   .flex_superior .foto_album {
@@ -747,10 +747,12 @@ section .link_localtour {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 .texto_contacto {
+  text-align: center;
   color: white;
   font-family: 'Secular One', sans-serif; }
 
 .estilo_formulario {
+  text-align: center;
   background-color: #0b0b0b;
   background: linear-gradient(rgba(0, 0, 0, 0.557) 0%, rgba(9, 9, 121, 0.458) 23%, rgba(0, 0, 0, 0.458) 57%, rgba(127, 12, 135, 0.458) 85%);
   background-size: cover;
@@ -773,8 +775,10 @@ section .link_localtour {
 
 @media (min-width: 992px) {
   .estilo_formulario {
+    align-content: center;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-top: 2%; }
   .texto_contacto {
     padding-bottom: 5%;
     padding-top: 7%;

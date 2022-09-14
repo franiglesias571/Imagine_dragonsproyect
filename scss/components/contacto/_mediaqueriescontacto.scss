@@ -3,6 +3,7 @@
     .estilo_formulario{
         display: flex;
         flex-direction: column;
+        
     }
 
     .texto_contacto{
@@ -17,8 +18,10 @@
 
 @media (min-width: 992px){
     .estilo_formulario{
+        align-content: center;
         display: flex;
         flex-direction: column;
+        padding-top: 2%;
     }
 
     .texto_contacto{

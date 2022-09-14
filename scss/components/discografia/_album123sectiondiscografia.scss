@@ -19,16 +19,15 @@ section{
       align-content:space-between ;
     }
     
- & .album1{
+& .album1{
   display: flex;
   align-items: center;
   justify-content: space-between;
   align-content: stretch;
   flex-direction: row-reverse;
   p{
-      @include p_formato
-     }
- }
+      @include p_formato }
+}
 
 
 & .album2{
